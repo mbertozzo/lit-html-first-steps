@@ -1,0 +1,17 @@
+.headline {
+  display: grid;
+  grid-template-columns: 30px auto;
+  margin-bottom: 20px;
+  font-size: 18px;
+
+  svg {
+    height: 20px;
+    width: auto;
+  }
+
+  .details {
+    font-size: 12px;
+    display: block;
+    margin-top: 10px;
+  }
+}

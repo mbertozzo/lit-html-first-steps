@@ -1,0 +1,15 @@
+.fallback {
+  margin: 50px auto;
+  width: 80%;
+  background-color: #e5e6e6;
+  border-radius: 5px;
+  padding: 15px;
+
+  p {
+    margin: 0;
+
+    &:first-child{
+      margin-bottom: 20px;
+    }
+  }
+}
