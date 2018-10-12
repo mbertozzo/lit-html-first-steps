@@ -10,6 +10,12 @@ Download the project or clone the repo and install the dependecies with
 $ yarn install
 ```
 
+In order to be able to fetch data from the NewsApi service used to provide the news feed you'll need to register [to the site](https://newsapi.org/) and get your **api key**. You can then add it to the news link in the file
+
+```bash
+src/libs/app.js
+```
+
 ### Available NPM tasks
 Start the project in development mode (live reload)
 ```bash
