@@ -1,46 +1,15 @@
 {
-  "name": "lit-html-first-steps",
+  "name": "15ott18",
   "version": "1.0.0",
-  "main": "src/index.js",
-  "displayName": "lit-html",
-  "config": {
-    "themeColor": "#e74e0f"
-  },
-  "description": "Some experiment with lit-html",
+  "main": "index.js",
   "license": "MIT",
-  "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server --hot",
-    "build": "NODE_ENV=production webpack",
-    "deploy": "NODE_ENV=production npm run build && gh-pages -d dist",
-    "test:unit": "NODE_ENV=test ava ./test/index.js --verbose",
-    "test": "npm run test:unit"
-  },
-  "devDependencies": {
-    "ava": "0.25.0",
-    "css-loader": "1.0.0",
-    "cypress": "3.0.2",
-    "esm": "3.0.71",
-    "favicons-webpack-plugin": "0.0.9",
-    "gh-pages": "1.2.0",
-    "html-webpack-plugin": "3.2.0",
-    "jsdom": "11.11.0",
-    "node-sass": "4.9.2",
-    "sass-loader": "7.0.3",
-    "style-loader": "0.21.0",
-    "webpack": "4.16.1",
-    "webpack-cli": "3.0.8",
-    "webpack-dev-server": "3.1.9",
-    "webpack-pwa-manifest": "3.6.2",
-    "workbox-webpack-plugin": "3.4.1"
-  },
   "dependencies": {
+    "@vaadin/router": "^1.1.0",
+    "http-server": "^0.11.1",
     "lit-html": "^0.12.0",
-    "normalize.css": "8.0.0",
-    "typebase.css": "0.5.0"
+    "live-server": "^1.2.0"
   },
-  "ava": {
-    "require": [
-      "esm"
-    ]
+  "scripts": {
+    "start": "live-server"
   }
 }
