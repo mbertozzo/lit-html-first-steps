@@ -9,8 +9,6 @@ import {headline} from '../components/headline.js';
 
 const root = document.querySelector('#root');
 
-
-
 const template = (data, news) => html`
   ${header(data)}
   <main class="${styles.container}">

@@ -36,10 +36,7 @@ const arrow = () => html`
   </svg>
 `;
 
-
-function parseDate(str_date) {
-  return new Date(Date.parse(str_date));
-}
+const parseDate = (str_date) => new Date(Date.parse(str_date));
 
 const headline = (news) => html`
   <div class="${styles.headline}">
