@@ -6,15 +6,17 @@ import {html, render} from 'lit-html';
 import {fallback} from './../components/fallback.js';
 import {header} from './../components/header.js';
 import {headline} from '../components/headline.js';
+import {NewsSource} from '../components/source.js'
 
 const root = document.querySelector('#root');
 
 const template = (data, news) => html`
   ${header(data)}
   <main class="${styles.container}">
+    <news-source name="Top Headlines"></news-source>
     ${news.map(n => headline(n))}
-    </article>
-  `;
+  </main>
+`;
 
 const loggedUser = 'https://randomuser.me/api/';
 const newsList = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=API_KEY';
